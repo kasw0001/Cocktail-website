@@ -19,22 +19,6 @@ body {
     src: url(../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
 } 
 
-section {
-    display: grid;
-}
-img, h1, .quiz, .gin {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    place-self: strech;
-    object-fit: cover;
-}
-
 /* Menu */
 .menu {
     display: flex;
@@ -87,12 +71,54 @@ p, li {
 .quiz {
     font-family: montserrat;
     text-decoration: underline;
+    color: white;
 }
-
 .quiz:hover {
-    background-color: transparent;
+    background-color: rgb(226,126,75);
+    text-decoration: underline;
 }
 
 .smage, .anledning {
     text-align: center;
+} 
+
+/* TEKST FORAN BILLEDE */
+section {
+    display: grid;
+    position: relative;
+}
+
+img, h1, .quiz, .text-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    place-self: stretch;
+    object-fit: cover;
+    z-index: 1; /* Image stays behind */
+}
+
+.text-container {
+    align-self: end; 
+    justify-self: start; 
+    padding: 10px 20px;
+    color: white;
+    z-index: 2; /* Ensure text is in front */
+    padding-right: 5cm;
+}
+
+h1, .quiz {
+    margin: 0;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+.quiz {
+    font-size: medium;
 }
