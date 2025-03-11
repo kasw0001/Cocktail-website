@@ -1,0 +1,9 @@
+@media (width>800px) {
+    /* index */
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 1cm;
+        padding-left: 1cm;
+      }
+}
