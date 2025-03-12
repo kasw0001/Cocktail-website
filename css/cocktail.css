@@ -72,6 +72,7 @@ p, li {
     font-family: montserrat;
     text-decoration: underline;
     color: white;
+    font-size: medium;
 }
 .quiz:hover {
     background-color: rgb(226,126,75);
@@ -119,6 +120,3 @@ h1 {
     font-size: xx-large;
 }
 
-.quiz {
-    font-size: medium;
-}
