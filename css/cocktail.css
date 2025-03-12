@@ -82,6 +82,11 @@ p, li {
 .smage, .anledning {
     text-align: center;
 } 
+.opskrift {
+    font-family: montserrat;
+    text-decoration: underline;
+    color: black;
+}
 
 /* TEKST FORAN BILLEDE */
 section {
