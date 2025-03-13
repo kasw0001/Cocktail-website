@@ -1,0 +1,340 @@
+body {
+    max-width: 900px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Abril;
+    src: url(../fonts/Abril_Fatface/AbrilFatface-Regular.ttf);
+}
+@font-face {
+    font-family: Josefin;
+    src: url(../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+} 
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: space-evenly;padding: 1em;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    border-radius: 0.5rem;
+    font-size: large;
+}
+
+a {
+    display: inline-block;
+    color: rgb(226,126,75);
+    text-decoration: none;
+    padding: 0.5rem;
+    font-family: Abril;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+}
+
+a:hover {
+    color: beige;
+    background-color: rgb(226,126,75);
+    box-shadow: 5px 5px 5px gray;
+}
+
+a:active {
+    color: bisque;
+    background-color: rgb(226,126,75);
+    box-shadow: 5px 5px 5px gray;
+}
+
+/* Tekst */
+h1 {
+    font-family: Abril;
+    color: white;
+}
+h2, h4, h3 {
+    font-family: Abril;
+    color: rgb(242, 137, 156);
+}
+.bruger {
+    font-family: Abril;
+    color: black;
+}
+
+p, li {
+    font-family: montserrat;
+    line-height: 0.7cm;
+}
+
+/* Knapper/links */
+.quiz {
+    font-family: montserrat;
+    text-decoration: underline;
+    color: white;
+    font-size: medium;
+}
+.quiz:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+    box-shadow: none;
+    text-shadow: 5px 5px 5px black;
+    font-style: oblique;
+}
+.smage, .anledning {
+    text-align: center;
+    padding-top: 1cm;
+} 
+.opskrift {
+    font-family: montserrat;
+    text-decoration: underline;
+    color: black;
+}
+.opskrift:hover {
+    color: black;
+    background-color: transparent;
+    box-shadow: none;
+    text-shadow: 5px 5px 5px rgb(226,126,75);
+    font-style: oblique;
+}
+
+/* TEKST FORAN BILLEDE */
+section {
+    display: grid;
+    position: relative;
+}
+
+img, h1, .quiz, .text-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    place-self: stretch;
+    object-fit: cover;
+    z-index: 1; /* Image stays behind */
+}
+
+.text-container {
+    align-self: end; 
+    justify-self: start; 
+    padding: 10px 20px;
+    color: white;
+    z-index: 2; /* Ensure text is in front */
+    padding-right: 5cm;
+}
+
+h1, .quiz {
+    margin: 0;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+/* knapper */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    justify-content: center; 
+    max-width: 600px;
+    margin: auto;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+}
+
+/* Styling af knapper */
+.btn {
+    display: block;
+    padding: 10px 15px;
+    background-color: #FF7C36;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* Hover-effekt */
+.btn:hover {
+    background-color: #FF7C36;
+    box-shadow: 5px 5px 5px grey;
+    font-style: oblique;
+}
+
+/* 📱 Mobil: 2 knapper pr. række */
+@media (max-width: 600px) {
+    .button-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* billeder */
+.drinks {
+    border-radius: 20px;
+}
+
+/* Udforsk */
+.boks {
+    display: inline-block;
+    background-color: rgba(244, 167, 125, 0.700);
+    border-radius: 30px;
+    margin: 1cm;
+    padding-inline: 0.3cm;
+}
+.tropisk {
+    font-style: italic;
+    display: inline-block;
+    background-color: rgb(226,126,75, 0.700);
+    border-radius: 20px;
+    padding: 0.5cm;
+}
+.link {
+    font-family: montserrat;
+    text-decoration: underline;
+    color: black;
+}
+.guava {
+    border-radius: 50px;
+    border: 5px solid white;
+}
+.col {
+    padding-left: 1cm;
+}
+/* Kajas coconut */
+.tekst2 {
+    padding-left: 2cm;
+    padding-bottom: 2cm;
+}
+.ingredienser {
+    padding-left: 1cm;
+}
+
+/* MENU */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    position:static;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px;
+    color: rgb(226,126,75);
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: end;
+  }
+  
+  .menu a:hover {
+    color: white;
+  }
+  
+  .burger {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .burger .line {
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+  .burger {
+    display: none;
+  }
+  @media screen and (max-width: 800px) {
+    .menu {
+      display: none;
+    }
+    .burger {
+      display: block;
+    }
+    .burger.active .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+      transition: 0.2s linear;
+    }
+  
+    .burger.active .line:nth-child(2) {
+      opacity: 0;
+      transition: 0.15s linear;
+    }
+  
+    .burger.active .line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+      transition: 0.2s linear;
+    }
+  
+    nav.active .menu {
+      display: block;
+      background-color: #ffffff;
+      position: absolute;
+      top: 94px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+  
+    nav.active .menu li {
+      margin: 10px 20px;
+    }
+  
+    nav.active .menu a {
+      font-size: 24px;
+    }
+  }
+  
+/* Footer */
+footer {
+    margin: auto;
+    padding-bottom: 1cm;
+    padding-top: 1cm;
+}
