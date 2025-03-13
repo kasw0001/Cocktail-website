@@ -57,10 +57,13 @@ h1 {
     font-family: Abril;
     color: white;
 }
-
-h2, h3, h4 {
+h2, h4 {
     font-family: Abril;
     color: rgb(242, 137, 156);
+}
+h3 {
+    font-family: Abril;
+    color: black;
 }
 
 p, li {
@@ -106,6 +109,7 @@ img {
     place-self: stretch;
     object-fit: cover;
     z-index: 1; /* Image stays behind */
+    border-radius: 10px;
 }
 
 .text-container {
@@ -125,3 +129,23 @@ h1 {
     font-size: xx-large;
 }
 
+/* Udforsk */
+.boks {
+    display: inline-block;
+    background-color: rgba(244, 167, 125, 0.700);
+    border-radius: 30px;
+    margin-top: 1cm;
+    padding-inline: 0.3cm;
+}
+.tropisk {
+    font-style: italic;
+    display: inline-block;
+    background-color: rgb(226,126,75, 0.700);
+    border-radius: 20px;
+    padding: 0.5cm;
+}
+.link {
+    font-family: montserrat;
+    text-decoration: underline;
+    color: black;
+}
