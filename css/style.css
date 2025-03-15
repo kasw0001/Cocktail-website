@@ -63,6 +63,7 @@ h2, h3, h4 {
 p, li {
     font-family: montserrat;
     line-height: 1.5;
+    padding-right: 0.5cm;
 }
 
 /* Knapper/links */
@@ -80,7 +81,7 @@ p, li {
     text-shadow: 5px 5px 5px black;
     font-style: oblique;
 }
-.smage, .anledning {
+.smage {
     text-align: center;
     padding-top: 1cm;
 } 
@@ -231,10 +232,10 @@ img {
   .burger {
     display: none;
   }
-  @media screen and (max-width: 800px) {
-    .menu {
+@media screen and (max-width: 800px) {
+    /* .menu {
       display: none;
-    }
+    } */
     .burger {
       display: block;
     }
@@ -266,7 +267,8 @@ img {
     nav.active .menu a {
       font-size: 24px;
     }
-  }
+    
+}
 
 /* Quiz */
 .spørgsmål {
@@ -304,4 +306,5 @@ ol[type="A"] li {
 footer {
     margin: auto;
     padding: 1cm 0;
+    font-family: josefin;
 }
