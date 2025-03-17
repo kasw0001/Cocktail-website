@@ -132,7 +132,7 @@ img {
     display: block;
     place-self: stretch;
     object-fit: cover;
-    z-index: 1; /* Image stays behind */
+    z-index: 1; 
 }
 
 .text-container {
@@ -140,7 +140,7 @@ img {
     justify-self: start; 
     padding: 10px 20px;
     color: white;
-    z-index: 2; /* Ensure text is in front */
+    z-index: 2; 
     padding-right: 5cm;
     background-color: rgba(0, 0, 0, 0.275);
 }
