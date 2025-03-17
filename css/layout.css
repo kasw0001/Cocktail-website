@@ -23,7 +23,35 @@ img.col {
     padding: 1cm;
 }
 
+/* TEKST FORAN BILLEDE */
+section {
+    display: grid;
+    position: relative;
+}
 
+img, h1, .quiz, .text-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    place-self: stretch;
+    object-fit: cover;
+    z-index: 1; 
+}
+
+.text-container {
+    align-self: end; 
+    justify-self: start; 
+    padding: 10px 20px;
+    color: white;
+    z-index: 2; 
+    padding-right: 1cm;
+    background-color: rgba(0, 0, 0, 0.275);
+}
 
 
 /* Desktop */
@@ -50,5 +78,29 @@ img.col {
         padding-top: 1cm;
         padding-bottom: 1cm;
     }
+    /* TEKST FORAN BILLEDE */
+    section {
+    display: grid;
+    position: relative;}
+    img, h1, .quiz, .text-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;}
+    img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    place-self: stretch;
+    object-fit: cover;
+    z-index: 1; }
+    .text-container {
+    align-self: end; 
+    justify-self: start; 
+    padding: 10px 20px;
+    color: white;
+    z-index: 2; 
+    padding-right: 5cm;
+    background-color: rgba(0, 0, 0, 0.275);}
+
+    
 
 }
