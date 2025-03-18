@@ -244,8 +244,11 @@ p, li {
 .spørgsmål {
     font-weight: bold; 
     margin-top: 20px; 
+    list-style-type: decimal;
 }
-
+.answers {
+    list-style-type: none; /* Removes numbering from the <li> wrapping the <ol> */
+}
 ol[type="A"] {
     margin-top: 5px;
     padding-left: 30px; 
@@ -254,6 +257,7 @@ ol[type="A"] {
 ol[type="A"] li {
     margin-bottom: 5px;
 }
+
 .results p {
     margin-bottom: 20px;
     line-height: 1.5;
